@@ -1,0 +1,25 @@
+{
+  "name": "failover",
+  "profile": "uneet-dev",
+  "type": "static",
+  "redirects": {
+    "/*": {
+      "location": "/",
+      "status": 200
+    }
+  },
+  "stages": {
+    "production": {
+      "domain": "case.dev.unee-t.com"
+    }
+  },
+  "regions": [
+    "ap-southeast-1"
+  ],
+  "error_pages": {
+    "variables": {
+      "support_email": "support@unee-t.com",
+      "color": "#228ae6"
+    }
+  }
+}
